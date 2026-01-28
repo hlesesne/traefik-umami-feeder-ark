@@ -1,0 +1,19 @@
+displayName: Traefik Umami Feeder (Ark Fork)
+
+import: github.com/samaritan-ark/traefik-umami-feeder-ark
+type: middleware
+
+summary: A Traefik plugin that feeds Umami Analytics with pageview events and custom header capture
+
+testData:
+  umamiHost: ""
+  umamiToken: ""
+  umamiUsername: ""
+  umamiPassword: ""
+  umamiTeamId: ""
+  websites:
+    domain: websiteId
+  createNewWebsites: false
+  captureHeaders:
+    X-Auth-Request-User: user
+    X-Auth-Request-Department: department
